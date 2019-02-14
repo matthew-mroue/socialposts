@@ -1,0 +1,66 @@
+.toptitle {
+    font-family: 'Homemade Apple', cursive;
+    color: rgb(3, 169, 244);
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: #f3f1f7;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.x {
+    float: right;
+}
+form {
+width: 50%;
+background-color: #B1DDEA;
+display: flex;
+flex-direction: column;
+
+}
+.wrap {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 23px;
+    margin-right: 23px;
+    background-color: white;
+}
+.postTitle {
+align-content: center;
+margin-left: 30px;
+font-size: 24px;
+}
+.postThought {
+align-content: center;
+}
+input {
+    width: 90%;
+    margin-left: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+textarea {
+    width: 90%;
+    margin-left: 20px;
+}
+.addpost {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 2%;
+}
+.NewThought {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}

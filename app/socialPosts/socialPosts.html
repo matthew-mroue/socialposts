@@ -1,0 +1,18 @@
+<p class="toptitle">My Thoughts</p>
+<section>
+   <h1 class="NewThought" ng-click="$ctrl.showForm();">New Thought</h1>
+</section>
+
+    <div class="wrap">
+        <section ng-repeat="post in $ctrl.postLibrary track by $index">
+            <p class="postTitle">{{ post.title }}</p>
+            <p class="postThought">{{ post.thought }}</p>
+            <i class="fas fa-times" ng-click="$ctrl.removePost($index);"></i>
+        </section>
+    </div>
+<post-form 
+    add-post="$ctrl.addPost(newPost);"
+    form-toggle="$ctrl.formToggle" 
+    show-form="$ctrl.showForm();"
+></post-form>
+<h1></h1>
