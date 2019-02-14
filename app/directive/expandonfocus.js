@@ -5,11 +5,12 @@ function expandOnFocus() {
   return {
     restrict: "A",
     link: function($scope, $element, $attrs) {
-      $element.on("focus", () => {
-        $element.css("height", "200px");
+      $element.on("focus", function() {
+        $element.css("transform-origin", "center");
+        $element.css("transform", "scale(1.05, 1.05)");
       });
-      $element.on("blur", () => {
-        $element.css("height", "initial");
+      $element.on("blur", function() {
+        $element.css("transform", "");
       });
     }
   };

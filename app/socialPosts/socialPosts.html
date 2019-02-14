@@ -10,9 +10,12 @@
             <i class="fas fa-times" ng-click="$ctrl.removePost($index);"></i>
         </section>
     </div>
-<post-form 
-    add-post="$ctrl.addPost(newPost);"
-    form-toggle="$ctrl.formToggle" 
-    show-form="$ctrl.showForm();"
-></post-form>
-<h1></h1>
+<div class="wrapper" ng-class="{hide: $ctrl.form-toggle"></div>
+    <div class="wrapperwrap">
+        <post-form 
+        form-toggle="$ctrl.formToggle" 
+        show-form="$ctrl.showForm();"
+        add-post="$ctrl.addPost(newPost);"
+        ></post-form>
+    </div>
+</div>

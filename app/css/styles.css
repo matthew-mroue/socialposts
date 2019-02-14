@@ -11,9 +11,10 @@ body {
 }
 section {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .x {
     float: right;
@@ -21,10 +22,10 @@ section {
 form {
 width: 50%;
 background-color: #B1DDEA;
-display: inherit;
 flex-direction: column;
-position: absolute;
-margin: 0;
+display: flex;
+margin: 40px;
+
 
 }
 .wrap {
@@ -68,4 +69,27 @@ textarea {
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
+}
+.fa-times {
+    float: right;
+    position: static;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.wrapper {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+}
+.wrapperwrap {    
+    width: 600px;
+    background-color: #B1DDEA;
+    border-radius: 5px;
 }

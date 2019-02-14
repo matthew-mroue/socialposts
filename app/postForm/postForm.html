@@ -3,7 +3,7 @@
     <input expand-on-focus type="text" placeholder="Post title" ng-model="$ctrl.newPost.title">
     <p>Thought</p>
     <textarea name="" id="" cols="30" rows="10" expand-on-focus ng-model="$ctrl.newPost.thought"></textarea>
-    <button class="addpost">Add Post</button>
+    <button class="addpost" ng-show="$ctrl.formToggle" ng-click="$ctrl.showForm();">Add Post</button>
 
 
 </form>
